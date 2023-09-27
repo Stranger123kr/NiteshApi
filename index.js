@@ -10,6 +10,6 @@ server.use("/api", router);
 
 // ====================================
 
-server.listen(process.env.PORT, () => {
+server.listen(process.env.PORT || 5000, () => {
   console.log(`Sever listing on port number ${process.env.PORT}`);
 });
